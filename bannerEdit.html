@@ -55,7 +55,7 @@
 <body>
 
     <!-- HEADER -->
-    <header id="admin_product_header">
+    <header id="admin_banner_header">
         <div class="inner">
     
             <a href="./index.html" class="logo">
@@ -116,71 +116,86 @@
     </header>
 
 
-    <section id="admin_product02">
+    <section id="admin_bannerEdit">
         <div class="inner">
             <div class="title">
-                <h2>상품등록</h2>
+                <h2>배너등록</h2>
             </div>
 
             <div class="admin_product02__wrap">
-                <label for="productName" class="productName">
-                    <p> <span>*</span> 상품명</p>
-                    <input type="textbox" name="productName" value="상품명을 입력해주세요." id="productName">
+                <label for="bannerName" class="bannerName">
+                    <p> 배너제목 </p>
+                    <input type="textbox" name="bannerName" value="배너제목을 입력해주세요." id="bannerName">
                 </label>
 
-                <label for="sort">
-                    <p> <span>*</span> 분류</p>
-                    <select name="sort">
-                        <p>분류</p>
-                        <option value="봄과일">봄과일</option>
-                        <option value="여름과일">여름과일</option>
-                        <option value="가을과일">가을과일</option>
-                        <option value="겨울과일">겨울과일</option>
+                <label for="date" class="date">
+                    <p> 게시일 </p>
+                    <input type="date">
+                    <span>~</span>
+                    <input type="date">
+                    <button>당일</button>
+                    <button>상시</button>
+                </label>
+
+                <label for="howlong" class="howlong">
+                    <p> 게시일수 </p>
+                    <input type="textbox" name="howlong" value="1" id="howlong">
+                    일
+                </label>
+
+                <label for="time" class="time">
+                    <p> 이미지 노출시간 </p>
+                    <select name="time" id="time">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
                     </select>
+                    <span>초</span>
                 </label>
 
-                <label for="price">
-                    <p> <span>*</span> 상품금액</p>
-                    <input type="textbox" name="price" value="0" id="price">
-                    원
-                </label>
-
-                <label for="discount">
-                    <p> 상품할인율 </p>
-                    <input type="textbox" name="discount" value="0" id="discount">
-                    %
-                </label>
-
-                <label for="totalPrice" class="totalPrice">
-                    <p> 할인적용 후 금액 </p>
-                    <input type="textbox" name="totalPrice" value="0" id="totalPrice">
-                    원
-                </label>
-
-                <label for="stock">
-                    <p> <span>*</span> 재고수량 </p>
-                    <input type="textbox" name="stock" value="0" id="stock">
-                    원
-                </label>
-
-                <label for="productPicture" class="productPicture">
-                    <p> <span>*</span> 상품이미지 </p>
+                <label for="bannerPicture" class="bannerPicture">
+                    <p> 상품이미지 </p>
                     <div>+ 추가</div>
-                    <input type="file" name="productPicture" id="productPicture" accept="image/*">
-                    <img src="./img/이미지위치.png" alt="미리보기 이미지">
-                </label>
-
-
-                <label for="description" class="description">
-                    <p> <span>*</span> 상품 상세정보 </p>
-                    <input type="textbox" name="description" id="description">
+                    <input type="file" name="bannerPicture" id="bannerPicture" accept="image/*">
+                    <img src="./img/배너수정.png" alt="배너 이미지">
+                    <button>이미지변경</button>
                 </label>
 
             </div>
 
             <div class="buttons">
                 <button>취소하기</button>
-                <button>등록하기</button>
+                <button>수정하기</button>
+            </div>
+
+
+
+
+            <!-- 어드민 배너관리 배너수정하기 버튼 클릭 시 모달창 -->
+            <div class="admin__banner__edit" style="display: none;">
+                <div class="admin__banner__edit__inner">
+
+                    <div class="top">
+                        <span>알림</span>
+                    </div>
+
+                    <div class="middle">
+                        <p>배너수정이 완료되었습니다.</p>
+                    </div>
+
+
+                    <div class="bottom">
+                        <button>확인</button>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>

@@ -55,13 +55,13 @@
 <body>
 
     <!-- HEADER -->
-    <header id="admin_product_header">
+    <header id="admin_notification_header">
         <div class="inner">
-    
+
             <a href="./index.html" class="logo">
                 <img src="./img/푸릇푸릇 로고.png" alt="logo" />
             </a>
-    
+
             <ul class="main-menu">
                 <li class="item">
                     <div class="item__name">
@@ -70,7 +70,7 @@
                             대쉬보드</a>
                     </div>
                 </li>
-    
+
                 <li class="item">
                     <div class="item__name">
                         <a href="./banner.html">
@@ -78,7 +78,7 @@
                             배너관리</a>
                     </div>
                 </li>
-    
+
                 <li class="item">
                     <div class="item__name">
                         <a href="./product.html">
@@ -86,7 +86,7 @@
                             상품관리</a>
                     </div>
                 </li>
-    
+
                 <li class="item">
                     <div class="item__name">
                         <a href="./review.html">
@@ -94,7 +94,7 @@
                             리뷰관리</a>
                     </div>
                 </li>
-    
+
                 <li class="item">
                     <div class="item__name">
                         <a href="./member.html">
@@ -102,7 +102,7 @@
                             회원관리</a>
                     </div>
                 </li>
-    
+
                 <li class="item">
                     <div class="item__name">
                         <a href="./notification.html">
@@ -111,58 +111,52 @@
                     </div>
                 </li>
             </ul>
-    
+
         </div>
     </header>
 
 
-    <section id="admin_product">
+    <section id="admin_notification">
         <div class="inner">
             <div class="title">
-                <h2>상품관리</h2>
+                <h2>알림관리</h2>
                 <button>
-                    <a href="./product02.html">상품등록</a>
+                    <a href="./notification02.html">알림등록</a>
                 </button>
             </div>
 
             <div class="box01">
                 <ul>
                     <li>
-                        전체상품 <span>1</span>건
+                        전체알림 <span>5</span>건
                     </li>
                     <li>
-                        판매중 <span>3</span>건
+                        진행중인 알림 <span>2</span>건
                     </li>
                     <li>
-                        판매중지 <span>1</span>건
-                    </li>
-                    <li>
-                        품절 <span>1</span>건
+                        중지된 알림 <span>3</span>건
                     </li>
                 </ul>
             </div>
 
             <div class="box02">
                 <div class="status">
-                    <span>게시상태</span>
+                    <span>알림상태</span>
                     <div class="buttons">
-                        <button>판매중</button>
-                        <button>판매중지</button>
-                        <button>품절</button>
+                        <button>진행중</button>
+                        <button>중지</button>
                     </div>
                 </div>
                 <div class="sort">
-                    <span>분류</span>
+                    <span>발송형식</span>
                     <div class="buttons">
-                        <button>봄과일</button>
-                        <button>여름과일</button>
-                        <button>가을과일</button>
-                        <button>겨울과일</button>
+                        <button>자동발송</button>
+                        <button>수동발송</button>
                     </div>
                 </div>
                 <div class="search">
                     <span>검색</span>
-                    <input type="text" placeholder="상품명 검색">
+                    <input type="text" placeholder="알림명 검색">
                     <div class="buttons">
                         <button>검색</button>
                     </div>
@@ -172,7 +166,7 @@
             <div class="box03">
                 <div class="left">
                     <span class="margin">검색결과 <span class="bold">5</span>건</span>
-                    <button>선택 판매중지</button>
+                    <button>선택 전체삭제</button>
                     <button>선택삭제</button>
                 </div>
 
@@ -193,7 +187,7 @@
 
             <div class="box04">
                 <table class="product-table">
-                    <caption class="hidden">상품관리</caption>
+                    <caption class="hidden">알림관리</caption>
                     <thead>
                         <tr>
                             <th scope="col">
@@ -201,16 +195,11 @@
                             </th>
                             <th scope="col">번호</th>
                             <th scope="col">상태</th>
-                            <th scope="col">분류</th>
-                            <th scope="col">상품명</th>
-                            <th scope="col">상품금액</th>
-                            <th scope="col">할인율</th>
-                            <th scope="col">찜 수</th>
-                            <th scope="col">결제횟수</th>
-                            <th scope="col">리뷰수</th>
+                            <th scope="col">알림명</th>
+                            <th scope="col">발송형식</th>
+                            <th scope="col">발송시점</th>
                             <th scope="col">등록일</th>
-                            <th scope="col">상품수정</th>
-                            <th scope="col">판매중지</th>
+                            <th scope="col">알림중지</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -219,18 +208,11 @@
                                 <input type="checkbox">
                             </td>
                             <td>05</td>
-                            <td>판매중</td>
-                            <td>겨울과일</td>
-                            <td>맛있는 아삭아삭 충주 산지직송 사...</td>
-                            <td>18,900원</td>
-                            <td>10%</td>
-                            <td>269</td>
-                            <td>135</td>
-                            <td>23</td>
-                            <td>2023. 07. 21</td>
-                            <td>
-                                <button>수정</button>
-                            </td>
+                            <td>진행중</td>
+                            <td>결제 완료 알림</td>
+                            <td>자동발송</td>
+                            <td>리뷰 답변 완료시점</td>
+                            <td>2023. 03. 01</td>
                             <td>
                                 <button>중지</button>
                             </td>
@@ -241,38 +223,11 @@
                                 <input type="checkbox">
                             </td>
                             <td>04</td>
-                            <td>판매중지</td>
-                            <td>겨울과일</td>
-                            <td>프리미엄 수입 석류 대과</td>
-                            <td>8,900원</td>
-                            <td>-</td>
-                            <td>19</td>
-                            <td>2</td>
-                            <td>-</td>
-                            <td>2023. 06. 24</td>
-                            <td>
-                                <button>수정</button>
-                            </td>
-                            <td>2023. 06. 25</td>
-                        </tr>
-
-                        <tr>
-                            <td>
-                                <input type="checkbox">
-                            </td>
-                            <td>03</td>
-                            <td>판매중</td>
-                            <td>겨울과일</td>
-                            <td>고흥유자 유자청용 유자</td>
-                            <td>18,900원</td>
-                            <td>5%</td>
-                            <td>3675</td>
-                            <td>2689</td>
-                            <td>328</td>
-                            <td>2023. 06. 13</td>
-                            <td>
-                                <button>수정</button>
-                            </td>
+                            <td>진행중</td>
+                            <td>결제 완료 알림</td>
+                            <td>자동발송</td>
+                            <td>결제완료 완료시점</td>
+                            <td>2023. 03. 01</td>
                             <td>
                                 <button>중지</button>
                             </td>
@@ -282,19 +237,25 @@
                             <td>
                                 <input type="checkbox">
                             </td>
-                            <td>02</td>
-                            <td>판매중</td>
-                            <td>봄과일</td>
-                            <td>국내산 냉동 딸기 1kg</td>
-                            <td>15,900원</td>
-                            <td>3%</td>
-                            <td>569</td>
-                            <td>102</td>
-                            <td>13</td>
-                            <td>2023. 06. 08</td>
+                            <td>03</td>
+                            <td>중지</td>
+                            <td>결제 완료 알림</td>
+                            <td>수동발송</td>
+                            <td>택배발송 시점</td>
+                            <td>2023. 03. 01</td>
+                            <td>2023. 02. 07</td>
+                        </tr>
+
+                        <tr>
                             <td>
-                                <button>수정</button>
+                                <input type="checkbox">
                             </td>
+                            <td>02</td>
+                            <td>진행중</td>
+                            <td>결제 완료 알림</td>
+                            <td>수동발송</td>
+                            <td>로그인이력 6개월 유지 시점</td>
+                            <td>2023. 03. 01</td>
                             <td>
                                 <button>중지</button>
                             </td>
@@ -305,20 +266,13 @@
                                 <input type="checkbox">
                             </td>
                             <td>01</td>
-                            <td>품절</td>
-                            <td>봄과일</td>
-                            <td>하동직송 청매실 대 5kg</td>
-                            <td>17,900원</td>
-                            <td>-</td>
-                            <td>27769</td>
-                            <td>3405</td>
-                            <td>1537</td>
-                            <td>2023. 06. 03</td>
+                            <td>진행중</td>
+                            <td>결제 완료 알림</td>
+                            <td>자동발송</td>
+                            <td>택배사 발송완료 시점</td>
+                            <td>2023. 03. 01</td>
                             <td>
-                                <button>수정</button>
-                            </td>
-                            <td>
-                                -
+                                <button>중지</button>
                             </td>
                         </tr>
                     </tbody>
